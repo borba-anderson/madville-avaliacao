@@ -2,9 +2,9 @@
 // Este script utiliza a API do Google Sheets para armazenar as respostas do formulário
 
 // Configuração da planilha
-const SHEET_ID = ''; // Será preenchido após a criação da planilha
+const SHEET_ID = 'AKfycbxddAZA2Ow5UlVpo-kuY0S8yDRU1BJzg7hs-Q35Iv6l9znY4FIf0vfb1FjfKpjRmqG9'; // Será preenchido após a criação da planilha
 const SHEET_TAB_NAME = 'Respostas';
-const SCRIPT_URL = ''; // Será preenchido após a publicação do script
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxddAZA2Ow5UlVpo-kuY0S8yDRU1BJzg7hs-Q35Iv6l9znY4FIf0vfb1FjfKpjRmqG9/exec'; // Será preenchido após a publicação do script
 
 // Função para enviar dados para o Google Sheets
 function sendToGoogleSheets(formData) {
