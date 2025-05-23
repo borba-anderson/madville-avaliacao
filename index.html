@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Avaliação de Atendimento - Madville</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
     <style>
         :root {
             --madville-green: #1e6b2d;
@@ -17,26 +17,26 @@
             --madville-black: #222222;
             --madville-gray: #f5f5f5;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Montserrat', sans-serif;
             background-color: var(--madville-gray);
             color: var(--madville-black);
             line-height: 1.6;
         }
-        
+
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
         }
-        
+
         header {
             background-color: var(--madville-green);
             padding: 20px 0;
@@ -44,19 +44,19 @@
             border-radius: 10px 10px 0 0;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        
+
         .logo {
             max-width: 180px;
             margin-bottom: 10px;
         }
-        
+
         .header-text {
             color: var(--madville-white);
             margin-top: 15px;
             font-weight: 300;
             font-size: 1.2rem;
         }
-        
+
         .form-container {
             background-color: var(--madville-white);
             padding: 30px;
@@ -64,7 +64,7 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             margin-bottom: 30px;
         }
-        
+
         h1 {
             color: var(--madville-green);
             margin-bottom: 25px;
@@ -72,20 +72,19 @@
             text-align: center;
             font-size: 1.8rem;
         }
-        
+
         .form-group {
             margin-bottom: 25px;
         }
-        
+
         label {
             display: block;
             margin-bottom: 8px;
             font-weight: 500;
             color: var(--madville-black);
         }
-        
-        input[type="text"], 
-        textarea {
+
+        input[type="text"], textarea {
             width: 100%;
             padding: 12px 15px;
             border: 1px solid #ddd;
@@ -94,28 +93,27 @@
             font-size: 1rem;
             transition: border 0.3s ease;
         }
-        
-        input[type="text"]:focus, 
-        textarea:focus {
+
+        input[type="text"]:focus, textarea:focus {
             border-color: var(--madville-green);
             outline: none;
         }
-        
+
         textarea {
             min-height: 120px;
             resize: vertical;
         }
-        
+
         .star-rating {
             display: flex;
             flex-direction: row-reverse;
             justify-content: flex-end;
         }
-        
+
         .star-rating input {
             display: none;
         }
-        
+
         .star-rating label {
             cursor: pointer;
             font-size: 30px;
@@ -123,28 +121,28 @@
             margin-right: 5px;
             transition: color 0.2s ease;
         }
-        
+
         .star-rating label:hover,
         .star-rating label:hover ~ label,
         .star-rating input:checked ~ label {
             color: var(--madville-gold);
         }
-        
+
         .response-time {
             display: flex;
             gap: 15px;
             flex-wrap: wrap;
         }
-        
+
         .response-option {
             flex: 1;
             min-width: 150px;
         }
-        
+
         .response-option input[type="radio"] {
             display: none;
         }
-        
+
         .response-option label {
             display: block;
             text-align: center;
@@ -155,13 +153,13 @@
             cursor: pointer;
             transition: all 0.3s ease;
         }
-        
+
         .response-option input[type="radio"]:checked + label {
             background-color: var(--madville-green);
             color: white;
             border-color: var(--madville-green);
         }
-        
+
         .submit-btn {
             background-color: var(--madville-green);
             color: white;
@@ -178,54 +176,54 @@
             text-transform: uppercase;
             letter-spacing: 1px;
         }
-        
+
         .submit-btn:hover {
             background-color: var(--madville-light-green);
         }
-        
+
         .thank-you {
             display: none;
             text-align: center;
             padding: 40px 20px;
         }
-        
+
         .thank-you h2 {
             color: var(--madville-green);
             margin-bottom: 15px;
             font-size: 2rem;
         }
-        
+
         .thank-you p {
             font-size: 1.1rem;
             margin-bottom: 25px;
         }
-        
+
         .check-icon {
             font-size: 60px;
             color: var(--madville-green);
             margin-bottom: 20px;
         }
-        
+
         footer {
             text-align: center;
             padding: 20px;
             color: var(--madville-black);
             font-size: 0.9rem;
         }
-        
+
         @media (max-width: 768px) {
             .container {
                 padding: 15px;
             }
-            
+
             .form-container {
                 padding: 20px;
             }
-            
+
             h1 {
                 font-size: 1.5rem;
             }
-            
+
             .response-option {
                 min-width: 100%;
             }
@@ -238,10 +236,9 @@
             <img src="assets/logo.png" alt="Madville Logo" class="logo">
             <p class="header-text">Sua opinião é muito importante para nós!</p>
         </header>
-        
+
         <div class="form-container">
             <h1>Avaliação de Atendimento</h1>
-            
             <form id="feedback-form">
                 <div class="form-group">
                     <label>Como você avalia nosso atendimento?</label>
@@ -258,7 +255,7 @@
                         <label for="star1" class="fas fa-star"></label>
                     </div>
                 </div>
-                
+
                 <div class="form-group">
                     <label>Como foi o tempo de resposta?</label>
                     <div class="response-time">
@@ -276,33 +273,41 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="form-group">
                     <label>Nome do atendente (opcional)</label>
                     <input type="text" id="attendant_name" name="attendant_name" placeholder="Digite o nome do atendente">
                 </div>
-                
+
                 <div class="form-group">
                     <label>Comentários adicionais</label>
                     <textarea id="comments" name="comments" placeholder="Compartilhe sua experiência ou sugestões..."></textarea>
                 </div>
-                
+
                 <button type="submit" class="submit-btn">Enviar Avaliação</button>
             </form>
         </div>
-        
+
         <div class="thank-you" id="thank-you-message">
-            <i class="fas fa-check-circle check-icon"></i>
-            <h2>Obrigado pela sua avaliação!</h2>
-            <p>Sua opinião é fundamental para continuarmos melhorando nosso atendimento.</p>
+            <div class="check-icon"><i class="fas fa-check-circle"></i></div>
+            <h2>Obrigado pelo seu feedback!</h2>
+            <p>A sua opinião nos ajuda a melhorar continuamente.</p>
         </div>
-        
+
         <footer>
-            &copy; 2025 Madville - Todos os direitos reservados
+            &copy; 2025 Madville. Todos os direitos reservados.
         </footer>
     </div>
 
-    <script src="sheets-integration.js"></script>
-    <script src="form-handler.js"></script>
+    <script>
+        const form = document.getElementById("feedback-form");
+        const thankYou = document.getElementById("thank-you-message");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            form.style.display = "none";
+            thankYou.style.display = "block";
+        });
+    </script>
 </body>
 </html>
